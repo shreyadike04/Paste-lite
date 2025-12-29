@@ -34,3 +34,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Persistence Layer
+This project uses an in-memory Map-based store to persist pastes during
+runtime. This avoids reliance on external services and works reliably
+for local execution and automated testing.
+
+## Deterministic Time Testing
+When TEST_MODE=1 is set, the application respects the x-test-now-ms
+request header for expiry calculations, enabling deterministic TTL tests.
