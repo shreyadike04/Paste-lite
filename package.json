@@ -1,7 +1,6 @@
 {
   "name": "pastebin-lite",
   "version": "1.0.0",
-  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,9 +8,14 @@
   },
   "dependencies": {
     "@vercel/kv": "^1.0.1",
-    "nanoid": "^4.0.2",
+    "nanoid": "^5.0.0",
     "next": "13.5.7",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/react": "^18.2.43",
+    "@types/node": "^20.11.5"
   }
 }
